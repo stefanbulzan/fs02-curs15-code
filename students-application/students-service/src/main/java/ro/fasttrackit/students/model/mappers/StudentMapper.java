@@ -9,4 +9,9 @@ import java.util.List;
 @Mapper(componentModel = "spring")
 public interface StudentMapper {
     List<Student> toApi(List<StudentEntity> students);
+
+    Student toApi(StudentEntity student);
+
+    StudentEntity toEntity(Student student);
+
 }

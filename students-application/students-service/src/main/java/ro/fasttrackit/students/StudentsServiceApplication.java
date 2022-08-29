@@ -16,7 +16,7 @@ public class StudentsServiceApplication {
         SpringApplication.run(StudentsServiceApplication.class, args);
     }
 
-    @Bean
+//    @Bean
     CommandLineRunner atStartup(StudentRepository repo) {
         return args -> {
             repo.saveAll(List.of(
